@@ -1,0 +1,28 @@
+.animate-scroll-effect {
+    position: relative;
+    overflow: hidden;
+}
+.animate-scroll-effect img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    transition: .3s;
+
+}
+.scroll-effect_do-animate img {
+    animation-name: img-effect;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes img-effect {
+    from {
+        transform: scale(2);
+        opacity: .3;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
